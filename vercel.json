@@ -8,7 +8,7 @@
       "use": "@vercel/node"
     },
     {
-      "src": "ui/build/**",
+      "src": "routes/**",
       "use": "@vercel/static"
     }
   ],
@@ -19,11 +19,11 @@
     },
     {
       "src": "/",
-      "dest": "ui/build/index.html"
+      "dest": "routes/index.html"
     },
     {
       "src": "/(.+)",
-      "dest": "ui/build/$1"
+      "dest": "routes/$1"
     }
   ]
 }
