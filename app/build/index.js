@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('../../app');
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 //var cFonks = require('../cloudant');
